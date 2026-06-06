@@ -37,3 +37,14 @@ Packet Length: 14 bytes
 Cool, 20°C, Auto Fan:
 
 56:70:00:00:20:00:00:00:00:00:00:00:00:00
+
+Hardware Tested
+
+Indoor Unit: EICON121-0
+Remote Control: KKG27A-C11
+
+Protocol decoded using:
+- ESP32
+- ESPHome
+- IR receiver on GPIO21
+- ESPHome Mirage protocol decoder
