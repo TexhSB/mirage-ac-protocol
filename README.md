@@ -38,7 +38,7 @@ Cool, 20°C, Auto Fan:
 
 56:70:00:00:20:00:00:00:00:00:00:00:00:00
 
-#Hardware Tested
+## Hardware Tested
 
 Indoor Unit: EICON121-0
 Remote Control: KKG27A-C11
