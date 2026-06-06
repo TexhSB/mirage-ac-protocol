@@ -181,14 +181,6 @@ The following bytes are accepted by the indoor unit but have not yet been fully 
 * Byte 2
 * Byte 11
 * Byte 12
-* [Projects](https://github.com/TexhSB/mirage-ac-protocol/projects)
-* [Wiki](https://github.com/TexhSB/mirage-ac-protocol/wiki)
-* [Security and quality](https://github.com/TexhSB/mirage-ac-protocol/security)
-*
-
-##
-
-* Byte 13
 
 ## Repository Contents
 
