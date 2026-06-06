@@ -32,6 +32,29 @@ Packet Length: 14 bytes
 | 7 | Clean |
 | 8 | Turbo |
 
+## Temperature Encoding
+
+Byte 1 stores the temperature.
+
+Formula:
+
+```text
+Byte1 = Temperature + 0x5C
+```
+
+Examples:
+
+| Temperature | Value |
+|------------|--------|
+| 20°C | 0x70 |
+| 21°C | 0x71 |
+
+## Example Packet
+
+Cool, 20°C, Auto Fan:
+
+56:70:00:00:20:00:00:00:00:00:00:00:00:00
+
 ## Byte Definitions
 
 ### Byte 3
@@ -69,11 +92,6 @@ Packet Length: 14 bytes
 |---------|---------|
 | 0x80 | Turbo |
 
-## Example Packet
-
-Cool, 20°C, Auto Fan:
-
-56:70:00:00:20:00:00:00:00:00:00:00:00:00
 
 ## Hardware Tested
 
@@ -85,3 +103,11 @@ Protocol decoded using:
 - ESPHome
 - IR receiver on GPIO21
 - ESPHome Mirage protocol decoder
+
+## Notes
+
+- Display appears to be a toggle command rather than a tracked state.
+- Quiet mode automatically forces Low Fan speed.
+- Turbo mode is independent of Health mode.
+- H-Sweep and V-Sweep are bit flags and may be combined (0x03).
+- Power Off is encoded using Byte 5 = 0xC0.
