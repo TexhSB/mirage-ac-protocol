@@ -32,6 +32,43 @@ Packet Length: 14 bytes
 | 7 | Clean |
 | 8 | Turbo |
 
+## Byte Definitions
+
+### Byte 3
+
+| Value | Function |
+|---------|---------|
+| 0x01 | Quiet |
+
+### Byte 5
+
+| Value | Function |
+|---------|---------|
+| 0x01 | H-Sweep |
+| 0x02 | V-Sweep |
+| 0x04 | Display Toggle |
+| 0xC0 | Power Off |
+
+### Byte 6
+
+| Value | Function |
+|---------|---------|
+| 0x02 | Health |
+| 0x08 | Sleep |
+| 0x40 | Heat Flag |
+
+### Byte 7
+
+| Value | Function |
+|---------|---------|
+| 0x40 | Clean |
+
+### Byte 8
+
+| Value | Function |
+|---------|---------|
+| 0x80 | Turbo |
+
 ## Example Packet
 
 Cool, 20°C, Auto Fan:
