@@ -2,7 +2,7 @@
 
 This repository documents the infrared protocol used by the EICON121-0 mini-split air conditioner and KKG27A-C11 remote control.
 
-The protocol was reverse engineered using an ESP32 running ESPHome with an IR receiver and transmitter. All values documented below have been verified through testing on physical hardware.
+The protocol was reverse engineered using an ESP32 running ESPHome with an IR receiver and transmitter. All values documented below have been verified through testing on physical hardware. (I am just doing this as an esphome project so I will not be going further for now. If you'd like feel free to figure out what Byte's 2, 11, 12, and 13 do.)
 
 ## Features Decoded
 
